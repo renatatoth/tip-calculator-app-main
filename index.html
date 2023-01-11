@@ -11,6 +11,43 @@
     <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
+    <div class="logo-container">
+        <img src="images/logo.svg" alt="Logo" class="logo">
+    </div>
+    <div class="container">
+        <div class="settings-container">
+            <div class="input-wrapper">
+                <label for="bill">Bill</label>
+                <input type="number" id="bill">
+            </div>
+            <div class="input-wrapper">
+                <label for="bill">Select Tip %</label>
+                <div class="tips-container">
+                    <button class="btn tip-btn">5%</button>
+                    <button class="btn tip-btn">10%</button>
+                    <button class="btn tip-btn">15%</button>
+                    <button class="btn tip-btn">25%</button>
+                    <button class="btn tip-btn">50%</button>
+                    <button class="btn custom-btn">Custom</button>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <label for="people">Number of People</label>
+                <input type="number" id="people">
+            </div>
+        </div>
+        <div class="total-container">
+            <div class="result-wrapper">
+                <div class="result-title">Tip Amount <span class="result-subtitle">/ person</span></div>
+                <div class="result-amount">$0.00</div>
+            </div>
+            <div class="result-wrapper">
+                <div class="result-title">Total <span class="result-subtitle">/ person</span></div>
+                <div class="result-amount">$0.00</div>
+            </div>
+            <button class="btn reset-btn">Reset</button>
+        </div>
+    </div>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
