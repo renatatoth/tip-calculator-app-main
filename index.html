@@ -20,22 +20,24 @@
     <div class="container">
         <div class="settings-container">
             <div class="input-wrapper">
-                <label for="bill">Bill</label>
+                <label for="bill">Bill <span class="error-text"></span></label>
+                <img class="input-icon" src="images/icon-dollar.svg" alt="Dollar icon">
                 <input type="number" id="bill" placeholder="0">
             </div>
             <div class="input-wrapper">
                 <label for="bill">Select Tip %</label>
                 <div class="tips-container">
-                    <button class="btn tip-btn">5%</button>
-                    <button class="btn tip-btn">10%</button>
-                    <button class="btn tip-btn">15%</button>
-                    <button class="btn tip-btn">25%</button>
-                    <button class="btn tip-btn">50%</button>
-                    <button class="btn custom-btn">Custom</button>
+                    <button class="btn tip-btn" data-value="5">5%</button>
+                    <button class="btn tip-btn" data-value="10">10%</button>
+                    <button class="btn tip-btn" data-value="15">15%</button>
+                    <button class="btn tip-btn" data-value="25">25%</button>
+                    <button class="btn tip-btn" data-value="50">50%</button>
+                    <input class="custom-input" type="number" id="custom" placeholder="Custom" aria-label="Custom">
                 </div>
             </div>
             <div class="input-wrapper">
-                <label for="people">Number of People</label>
+                <label for="people">Number of People <span class="error-text"></span></label>
+                <img class="input-icon" src="images/icon-person.svg" alt="Person icon">
                 <input type="number" id="people" placeholder="0">
             </div>
         </div>
@@ -55,7 +57,6 @@
     </div>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
     </div>
 </body>
 </html>
