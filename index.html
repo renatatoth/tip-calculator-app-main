@@ -20,36 +20,37 @@
     <div class="container">
         <div class="settings-container">
             <div class="input-wrapper">
-                <label for="bill">Bill <span class="error-text"></span></label>
+                <label for="bill">Bill <span class="error-text" data-error="bill"></span></label>
                 <img class="input-icon" src="images/icon-dollar.svg" alt="Dollar icon">
-                <input type="number" id="bill" placeholder="0">
+                <input class="input" type="number" id="bill" name="bill" placeholder="0" min="0">
             </div>
             <div class="input-wrapper">
-                <label for="bill">Select Tip %</label>
+                <label for="bill">Select Tip % <span class="error-text" data-error="custom"></span></label>
                 <div class="tips-container">
-                    <button class="btn tip-btn" data-value="5">5%</button>
-                    <button class="btn tip-btn" data-value="10">10%</button>
-                    <button class="btn tip-btn" data-value="15">15%</button>
-                    <button class="btn tip-btn" data-value="25">25%</button>
-                    <button class="btn tip-btn" data-value="50">50%</button>
-                    <input class="custom-input" type="number" id="custom" placeholder="Custom" aria-label="Custom">
+                    <button class="btn tip-btn" value="5">5%</button>
+                    <button class="btn tip-btn" value="10">10%</button>
+                    <button class="btn tip-btn" value="15">15%</button>
+                    <button class="btn tip-btn" value="25">25%</button>
+                    <button class="btn tip-btn" value="50">50%</button>
+                    <input class="input custom-input" type="number" name="custom" id="custom" placeholder="Custom"
+                           aria-label="Custom" min="0">
                 </div>
             </div>
             <div class="input-wrapper">
-                <label for="people">Number of People <span class="error-text"></span></label>
+                <label for="people">Number of People <span class="error-text" data-error="people"></span></label>
                 <img class="input-icon" src="images/icon-person.svg" alt="Person icon">
-                <input type="number" id="people" placeholder="0">
+                <input class="input" type="number" id="people" name="people" placeholder="0" min="0">
             </div>
         </div>
         <div class="totals-container">
             <div class="totals">
                 <div class="result-wrapper">
                     <div class="result-title">Tip Amount <span class="result-subtitle">/ person</span></div>
-                    <div class="result-amount">$0.00</div>
+                    <div class="result-amount" id="tip-person">$0.00</div>
                 </div>
                 <div class="result-wrapper">
                     <div class="result-title">Total <span class="result-subtitle">/ person</span></div>
-                    <div class="result-amount">$0.00</div>
+                    <div class="result-amount" id="total-person">$0.00</div>
                 </div>
             </div>
             <button class="btn reset-btn">Reset</button>
