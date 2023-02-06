@@ -4,6 +4,12 @@ html {
     font-weight: 700;
 }
 
+@media only screen and (max-width: 624px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
     padding: 0;
@@ -35,8 +41,22 @@ body {
     font-family: var(--font);
 }
 
+@media only screen and (max-width: 624px) {
+    body {
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
 .logo-container {
     margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 624px) {
+    .logo-container {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 }
 
 .container {
@@ -49,10 +69,32 @@ body {
     margin-bottom: 3rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .settings-container {
     width: 50%;
     color: var(--cyan-dark);
     margin-right: 3rem;
+}
+
+@media only screen and (max-width: 624px) {
+    .settings-container {
+        width: 100%;
+        margin-right: 2rem;
+    }
 }
 
 .totals-container {
@@ -64,6 +106,17 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem;
+}
+
+.totals-container {
+    padding: 2rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 624px) {
+    .totals-container {
+        padding: 2rem 1.5rem;
+    }
 }
 
 .input-wrapper {
@@ -91,6 +144,7 @@ body {
     text-align: right;
 }
 
+
 .input-wrapper input::placeholder {
     color: var(--cyan-grey-2);
     text-align: right;
@@ -110,6 +164,12 @@ body {
 .input-wrapper .custom-input {
     font-size: 1.8rem;
     padding: 1.5rem 1rem;
+}
+
+@media only screen and (max-width: 624px) {
+    .input-wrapper .custom-input {
+        font-size: 1.5rem;
+    }
 }
 
 .input-wrapper .custom-input::placeholder {
@@ -134,6 +194,13 @@ body {
     grid-gap: 1.2rem;
 }
 
+@media only screen and (max-width: 624px) {
+    .tips-container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .result-wrapper {
     display: flex;
     justify-content: space-between;
@@ -145,6 +212,12 @@ body {
     margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 624px) {
+    .result-title {
+        font-size: 1rem;
+    }
+}
+
 .result-subtitle {
     display: block;
     color: var(--cyan-grey-1);
@@ -154,6 +227,12 @@ body {
 .result-amount {
     font-size: 3rem;
     color: var(--cyan);
+}
+
+@media only screen and (max-width: 624px) {
+    .result-amount {
+        font-size: 2.2rem;
+    }
 }
 
 .btn {
@@ -168,6 +247,13 @@ body {
     transition: .15s all ease-in;
 }
 
+@media only screen and (max-width: 624px) {
+    .btn {
+        padding: .2rem 1rem;
+        font-size: 1.5rem;
+    }
+}
+
 .btn:hover {
     background-color: var(--cyan-light-1);
     color: var(--cyan-dark);
@@ -175,7 +261,7 @@ body {
 
 .reset-btn {
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--cyan);
     text-transform: uppercase;
     color: var(--cyan-dark);
     opacity: .2;
@@ -197,6 +283,12 @@ body {
 .attribution {
     font-size: 11px;
     text-align: center;
+}
+
+@media only screen and (max-width: 624px) {
+    .attribution {
+margin-bottom: 1rem;
+    }
 }
 
 .attribution a {
